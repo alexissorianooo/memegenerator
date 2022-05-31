@@ -67,7 +67,7 @@ function App() {
               value={meme.bottomText}
             />
           </div>
-          <button onClick={handleClick} className='btn hover:btn-bg text-pink-500'>Generate Meme</button>
+          <button onClick={handleClick} className='btn text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:btn-bg'>Generate Meme</button>
         </div>
         <div className=''>
           <Meme 
