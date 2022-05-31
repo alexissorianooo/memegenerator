@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base{
     .navbar-bg{
         @apply bg-gradient-to-r from-purple-500 to-pink-500
+    }
+    .btn-bg{
+        @apply bg-gradient-to-r from-cyan-500 to-blue-500  rounded-xl text-white
+    }
+    .btn{
+        @apply text-3xl font-bold p-2
+    }
+    .lbl{
+        @apply text-lg
     }
 }

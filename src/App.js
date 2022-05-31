@@ -9,6 +9,8 @@ function App() {
   const [meme, setMeme] = React.useState({
     memeUrl: '',
     memeName: '',
+    topText: '',
+    bottomText: ''
   })
 
   React.useEffect(() => {
@@ -29,15 +31,52 @@ function App() {
     })
   }
   
+  function handleChange(event){
+    const {name, value} = event.target
+    setMeme(prevState => {
+      return {
+        ...prevState,
+        [name]: value
+      }
+    })
+  }
+
   return (
-    <div>
-      <Navbar />
-      <button onClick={handleClick}>Generate Meme</button>
-      <Meme 
-        memeSource={meme.memeUrl}
-        memeName={meme.memeName}
-      />
-    </div>
+
+    <>
+    <Navbar />
+      <div className='flex flex-col justify-center items-center' > 
+        <div className="flex flex-row justify-center items-center my-9">
+          <div className="flex flex-col m-2 ">
+            <label htmlFor="topText" className='lbl'>Top Text</label>
+            <input 
+              className='border-2'
+              type="text" 
+              name="topText"
+              onChange={handleChange}
+              value={meme.topText}
+            />
+          </div>
+          <div className="flex flex-col m-2 mr-10">
+            <label htmlFor="bottomText" className='lbl'>Bottom Text</label>
+            <input 
+              className='border-2'
+              type="text" 
+              name="bottomText"
+              onChange={handleChange}
+              value={meme.bottomText}
+            />
+          </div>
+          <button onClick={handleClick} className='btn hover:btn-bg text-pink-500'>Generate Meme</button>
+        </div>
+        <div className=''>
+          <Meme 
+            memeSource={meme.memeUrl}
+            memeName={meme.memeName}
+          />
+        </div>
+      </div>
+    </>
   );
 }
 
