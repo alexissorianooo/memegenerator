@@ -45,36 +45,39 @@ function App() {
 
     <>
     <Navbar />
-      <div className='flex flex-col justify-center items-center' > 
-        <div className="flex flex-row justify-center items-center my-9">
-          <div className="flex flex-col m-2 ">
+      <div className='flex flex-col justify-center items-center w-screen' > 
+        <div className="flex md:flex-row flex-col justify-center items-center my-2 md:my-9 w-full">
+          <div className="flex flex-col m-2">
             <label htmlFor="topText" className='lbl'>Top Text</label>
             <input 
-              className='border-2'
+              className='border-2 md:text-xl'
               type="text" 
               name="topText"
               onChange={handleChange}
               value={meme.topText}
             />
           </div>
-          <div className="flex flex-col m-2 mr-10">
+          <div className="flex flex-col m-2 md:mr-10 mb-4 md:mb-2">
             <label htmlFor="bottomText" className='lbl'>Bottom Text</label>
             <input 
-              className='border-2'
+              className='border-2 md:text-xl'
               type="text" 
               name="bottomText"
               onChange={handleChange}
               value={meme.bottomText}
             />
-          </div>
-          <button onClick={handleClick} className='btn text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:btn-bg'>Generate Meme</button>
+          </div> 
+          {/* text-transparent bg-clip-text (IF I WANT TO CHANGE THIS TO COLORED TEXT)*/}
+          <button onClick={handleClick} className='btn bg-gradient-to-r from-purple-400 to-pink-600 hover:btn-bg transition-all ease-linear'>Generate Meme</button>
         </div>
+
         <div className=''>
           <Meme 
             memeSource={meme.memeUrl}
             memeName={meme.memeName}
           />
         </div>
+
       </div>
     </>
   );
