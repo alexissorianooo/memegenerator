@@ -9,4 +9,4 @@
 <br />
 Screenshot:
 
-![SampleImage](./src/images/sample1.png)
+![SampleImage](./src/images/sample2.png)
