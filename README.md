@@ -1,5 +1,7 @@
 # Meme Generator 😉.
 
-This is just a simple project made with **React** ![ReactLogo](https://mpng.subpng.com/20180604/pol/kisspng-react-javascript-angularjs-ionic-atom-5b154be6709500.6532453515281223424611.jpg) and **Tailwind CSS**
+## This is just a simple project made with:
 
-I used an API for image generation.
+**React** ![ReactLogo](./src/images/reactLogo.png)[width=0.5\textwidth] for building the website
+**Tailwind CSS** ![TailWindLogo](./src/images/tailwindLogo.png)[width=0.5\textwidth] for designing
+**API** for image generation.
