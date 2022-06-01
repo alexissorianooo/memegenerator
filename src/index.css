@@ -16,6 +16,10 @@
         @apply text-lg
     }
     .memetext{
-        @apply text-4xl text-white font-bold
+        -webkit-text-stroke: 1px black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        @apply text-white font-bold font-meme
     }
 }

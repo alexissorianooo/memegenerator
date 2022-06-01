@@ -3,7 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'meme': ['Impact', 'sans'],
+      }
+    },
   },
   plugins: [],
 }

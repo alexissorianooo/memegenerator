@@ -71,7 +71,7 @@ function App() {
           <button onClick={handleClick} className='btn bg-gradient-to-r from-purple-400 to-pink-600 hover:btn-bg transition-all ease-linear'>Generate Meme</button>
         </div>
 
-        <div className='w-full'>
+        <div className=''>
           <Meme 
             memeSource={meme.memeUrl}
             memeName={meme.memeName}
