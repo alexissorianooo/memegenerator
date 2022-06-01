@@ -4,5 +4,5 @@
 
 **React** ![ReactLogo](./src/images/reactLogo.png){width=0.5\textwidth} for building the website
 **Tailwind CSS** ![TailWindLogo](./src/images/tailwindLogo.png){:height="10px" width="10px"} for designing
-[[./src/images/tailwindLogo.png|width=10px]]
+[./src/images/tailwindLogo.png|width=10px]
 **API** for image generation.
