@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    height: 100vh
+}
+
 @layer base{
     .navbar-bg{
         @apply bg-gradient-to-r from-purple-500 to-pink-500
@@ -16,10 +20,10 @@
         @apply text-lg
     }
     .memetext{
-        -webkit-text-stroke: 1px black;
+        -webkit-text-stroke: 1.5px black;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
-        @apply text-white font-bold font-meme
+        @apply text-white font-meme
     }
 }

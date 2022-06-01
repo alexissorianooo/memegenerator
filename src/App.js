@@ -46,7 +46,7 @@ function App() {
 
     <>
     <Navbar />
-      <div className='flex flex-col justify-center items-center w-screen' > 
+      <div className='flex flex-col justify-center items-center w-screen md:h-full' > 
         <div className="flex md:flex-row flex-col justify-center items-center my-2 md:my-9 w-full">
           <div className="flex flex-col m-2">
             <label htmlFor="topText" className='lbl'>Top Text</label>
@@ -80,7 +80,7 @@ function App() {
             memebottom={meme.bottomText}
           />
         </div>
-      <Developer/>
+        <Developer/>
       </div>
     </>
   );
