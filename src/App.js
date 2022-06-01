@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Meme from './components/Meme'
+import Developer from './components/Developer'
 
 function App() {
   
@@ -79,7 +80,7 @@ function App() {
             memebottom={meme.bottomText}
           />
         </div>
-
+      <Developer/>
       </div>
     </>
   );
