@@ -15,4 +15,7 @@
     .lbl{
         @apply text-lg
     }
+    .memetext{
+        @apply text-4xl text-white font-bold
+    }
 }
